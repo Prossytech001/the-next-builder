@@ -24,7 +24,7 @@ export default function ApplyPage() {
       <fieldset><legend>Personal information</legend>
         <label htmlFor="fullName">Full name *</label><input id="fullName" name="fullName" required autoComplete="name" />
         <div className="two"><div><label htmlFor="email">Email address *</label><input id="email" name="email" type="email" required autoComplete="email" /></div>
-        <div><label htmlFor="phone">Phone number *</label><input id="phone" name="phone" type="tel" required autoComplete="tel" /></div></div>
+        <div><label htmlFor="phone">Whatsapp Number so we will be able to add you up in the community *</label><input id="phone" name="phone" type="tel" required autoComplete="tel" /></div></div>
         <div className="two"><div><label htmlFor="location">Location *</label><input id="location" name="location" required placeholder="City, State" /></div>
         <div><label htmlFor="age">Age *</label><input id="age" name="age" type="number" min="10" max="99" required /></div></div></fieldset>
       <fieldset><legend>About you</legend>

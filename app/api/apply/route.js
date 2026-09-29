@@ -10,5 +10,5 @@ export async function POST(req) {
     FIELDS.forEach(f => rec[f] = String(d[f] ?? '').trim().slice(0, 2000));
     await save(rec);
     return Response.json({ ok: true });
-  } catch (e) { return Response.json({ error: e.message }, { status: 400 }); }
+    } catch (e) { console.error('APPLY ERROR:', e); return Response.json({ error: e.message }, { status: 400 }); }
 }
